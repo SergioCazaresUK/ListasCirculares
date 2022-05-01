@@ -84,6 +84,40 @@ namespace ListasCirculares
             }
             return;
         }
+
+        public void ModificarNodo()
+        {
+            Nodo actual = new Nodo();
+            actual = primero;
+            bool buscar = false;
+            Console.WriteLine("Que Nodo Modificar?");
+            int nodoBusqueda = int.Parse(Console.ReadLine());
+            if (actual != null)
+            {
+                do
+                {
+
+                    if (actual.dato == nodoBusqueda)
+                    {
+                        Console.WriteLine("Nodo Encontrado " + actual.dato);
+                        Console.WriteLine("Nuevo Nodo: ");
+                        actual.dato = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Nodo Modificado");
+                        buscar = true;
+                    }
+                    actual = actual.siguiente;
+                } while (actual != primero && buscar != true);
+                if (!buscar)
+                {
+                    Console.WriteLine("No encontrado");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Esta Lista Esta Vacia");
+            }
+            return;
+        }
     }
 
 }

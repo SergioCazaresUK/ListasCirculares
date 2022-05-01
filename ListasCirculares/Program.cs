@@ -14,3 +14,6 @@ lista.BuscarNodo();
 
 lista.ModificarNodo();
 lista.DesplegarLista();
+
+lista.EliminarNodo();
+lista.DesplegarLista();

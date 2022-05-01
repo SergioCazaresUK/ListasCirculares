@@ -11,3 +11,6 @@ Console.WriteLine("----------------");
 lista.DesplegarLista();
 
 lista.BuscarNodo();
+
+lista.ModificarNodo();
+lista.DesplegarLista();

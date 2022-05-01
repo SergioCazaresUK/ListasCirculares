@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using ListasCirculares;
+
+Lista lista = new Lista();
+
+lista.InsertarNodo();
+lista.InsertarNodo();
+lista.InsertarNodo();
+lista.InsertarNodo();
+lista.InsertarNodo();
+Console.WriteLine("----------------");
+lista.DesplegarLista();
+
+lista.BuscarNodo();

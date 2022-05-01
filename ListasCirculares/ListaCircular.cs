@@ -25,15 +25,34 @@ namespace ListasCirculares
             if(primero == null)
             {
                 primero = nuevo;
-                primero.siguiete = primero;
+                primero.siguiente = primero;
                 ultimo = primero;
             }
             else
             {
-                ultimo.siguiete = nuevo;
-                nuevo.siguiete = primero;
+                ultimo.siguiente = nuevo;
+                nuevo.siguiente = primero;
                 ultimo = nuevo;
             }
+        }
+
+        public void DesplegarLista()
+        {
+            Nodo actual = new Nodo();
+            actual = primero;
+            if(actual != null)
+            {
+                do
+                {
+                    Console.WriteLine(" " + actual.dato);
+                    actual = actual.siguiente;
+                } while (actual != primero);
+            }
+            else
+            {
+                Console.WriteLine("Esta Lista Esta Vacia");
+            }
+            return;
         }
     }
 

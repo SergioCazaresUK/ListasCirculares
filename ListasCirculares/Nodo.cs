@@ -9,7 +9,7 @@ namespace ListasCirculares
     public class Nodo
     {
         private int Dato;
-        private Nodo siguiente;
+        private Nodo Siguiente;
 
         public int dato
         {
@@ -17,10 +17,10 @@ namespace ListasCirculares
             set { Dato = value; }
         }
 
-        public Nodo siguiete
+        public Nodo siguiente
         {
-            get { return siguiente; }
-            set { siguiente = value; } 
+            get { return Siguiente; }
+            set { Siguiente = value; } 
         }
     }
 }

@@ -14,20 +14,20 @@ namespace ListasCircularesDobles
 
         public int dato
         {
-            get { return dato; }
-            set { dato = value; }
+            get { return Dato; }
+            set { Dato = value; }
         }
 
         public Nodo siguiente
         {
-            get { return siguiente; }
-            set { siguiente = value; }
+            get { return Siguiente; }
+            set { Siguiente = value; }
         }
 
         public Nodo anterior
         {
-            get { return anterior; }
-            set { anterior = value; }
+            get { return Anterior; }
+            set { Anterior = value; }
         }
     }
 
